@@ -11,8 +11,8 @@ terraform {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket   = "${var.bucket_name}-${var.regions_to_create}"
-  acl      = "private"
+  bucket = "${var.bucket_name}-${var.regions_to_create}"
+  acl    = "private"
 
   tags = {
     purpose = "testing"
