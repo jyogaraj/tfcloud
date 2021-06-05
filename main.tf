@@ -21,7 +21,7 @@ provider "aws" {
 
 module "s3" {
   source      = "./modules/s3"
-  bucket_name = "yoga-terraform-testing"
+  bucket_name = "yoga-terraform-test"
   providers = {
     aws           = aws
     aws.us_west_2 = aws.us_west_2
